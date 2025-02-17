@@ -1,7 +1,9 @@
 import axios from "axios";
 
+const baseUrl = 'https://auth-api.mateomartinez.dev/api/v1/';
+
 export const api = axios.create({
-    baseURL: "http://localhost:8000/api/v1",
+    baseURL: baseUrl,
     headers: {
         "Accept": "application/json",
         "Content-Type": "application/json",
