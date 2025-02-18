@@ -61,7 +61,7 @@
     import { useRequest } from '@/composables/useRequest';
     import SubmitButton from '@/components/SubmitButton.vue';
 
-    const headers = `{ "Authorization": "Bearer <<Token>>" } => headers to send in the request`;
+    const headers = `{ "Authorization": "Bearer 1|KnecSe3PGbFibSe9Dq4NqxKQ3CpI3xc0JhogNbEI0c1f08e3" } => headers to send in the request`;
 
     const middlewares = `["auth:sanctum"] => middleware to verify the user's authentication`;
 

@@ -74,7 +74,7 @@ import SubmitButton from '@/components/SubmitButton.vue';
 `
     const body = `{
     "name": "Carlos Mateo Martinez",
-    "email": "carlosmateo484@gmail.com",
+    "email": "carlosmateo@example.com",
     "password": "123456789",
     "passwordConfirmation": "123456789"
 }`;
@@ -84,7 +84,7 @@ import SubmitButton from '@/components/SubmitButton.vue';
     "user": {
       "id": 7,
       "name": "Carlos Mateo Martinez",
-      "email": "carlosmateofd484@gmail.com",
+      "email": "carlosmateo@example.com",
       "emailVerified": null,
       "updatedAt": "2025-02-17T01:48:40.000000Z",
       "createdAt": "2025-02-17T01:48:40.000000Z"
@@ -94,10 +94,10 @@ import SubmitButton from '@/components/SubmitButton.vue';
 }`;
 
     const form = reactive({
-        name: 'Carlos Mateo Martinez',
-        email: 'carlosmateo484@gmail.com',
-        password: '123456789',
-        passwordConfirmation: '123456789'
+        name: '',
+        email: '',
+        password: '',
+        passwordConfirmation: ''
     });
 
     const { register } = useAuthStore();

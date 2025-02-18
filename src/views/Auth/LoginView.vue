@@ -69,7 +69,7 @@
 }
 `
     const body = `{
-    "email": "carlosmateo484@gmail.com",
+    "email": "carlosmateo@example.com",
     "password": "123456789",
 }`;
 
@@ -78,12 +78,12 @@
         "user": {
             "id": 1,
             "name": "carlosmateo",
-            "email": "carlosmateo484@gmail.com",
+            "email": "carlosmateo@example.com",
             "emailVerified": null,
             "updatedAt": "2025-02-13T15:37:12.000000Z",
             "createdAt": "2025-02-13T15:06:28.000000Z"
         },
-        "token": "12|KnecSe3PGbFibSe9Dq4NqxKQ3CpI3xc0JhogNbEI0c1f08e3"
+        "token": "1|KnecSe3PGbFibSe9Dq4NqxKQ3CpI3xc0JhogNbEI0c1f08e3"
     }
 }`;
 
@@ -91,11 +91,11 @@
     const { login } = useAuthStore();
 
     const form = reactive({
-        email: 'carlosmateo484@gmail.com',
-        password: '123456789',
+        email: ' ',
+        password: '',
     });
 
-    const responseData = ref({ "request": "no sent" });
+    const responseData = ref({ "request": "not sent" });
 
     const responseString = computed(() => JSON.stringify(responseData.value, null, 2));
 

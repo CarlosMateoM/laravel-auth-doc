@@ -65,7 +65,7 @@
 }
 `
     const body = `{
-    "email": "carlosmateo484@gmail.com",
+    "email": "carlosmateo@example.com",
 }`;
 
     const successResponse = `{
@@ -76,7 +76,7 @@
     const { forgotPassword } = useAuthStore();
 
     const form = reactive({
-        email: 'carlosmateo484@gmail.com',
+        email: ' ',
  
     });
 

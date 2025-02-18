@@ -1,5 +1,6 @@
 <template>
   <main>
+    <h2 class="text-xl mt-4 mb-2">Description</h2>
     <p>
       This API provides essential authentication features, including user registration, email verification, login, and
       password reset, all powered by Laravel Sanctum. Designed for security and simplicity, it’s the perfect starting

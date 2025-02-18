@@ -77,7 +77,7 @@
 `
     const body = `{ 
     "token": "90c16b86d2a2db3dc177b20619cbff50ca0257c5684b32192c0c4d85b4f6b1bd",
-	"email": "carlosmateo484@gmail.com",
+	"email": "carlosmateo@example.com",
     "password": "carlosmateo",
     "passwordConfirmation": "carlosmateo"
 }`;
@@ -91,13 +91,13 @@
     const { resetPassword } = useAuthStore();
 
     const form = reactive({
-        token: '90c16b86d2a2db3dc177b20619cbff50ca0257c5684b32192c0c4d85b4f6b1bd',
-        email: 'carlosmateo484@gmail.com',
-        password: 'carlosmateo',
-        passwordConfirmation: 'carlosmateo',
+        token: '',
+        email: '',
+        password: '',
+        passwordConfirmation: '',
     });
 
-    const responseData = ref({ "request": "no sent" });
+    const responseData = ref({ "request": "not sent" });
 
     const responseString = computed(() => JSON.stringify(responseData.value, null, 2));
 

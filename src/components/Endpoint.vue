@@ -1,7 +1,7 @@
 <template>
     <div class="my-8">
         <h2 class="text-xl mb-2">Endpoint </h2>
-        <div class="flex items-center justify-between bg-gray-50 p-2 rounded-md text-2xl">
+        <div class="flex items-center justify-between bg-gray-50 p-2 rounded-md text-normal sm:text-2xl">
             <div>
                 <span :class="methodClass" class="font-bold border-r border-gray-900 mr-4 pr-4 uppercase">
                     {{ method }}

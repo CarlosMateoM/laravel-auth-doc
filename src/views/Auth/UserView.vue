@@ -61,7 +61,7 @@
     import { useRequest } from '@/composables/useRequest';
     import SubmitButton from '@/components/SubmitButton.vue';
 
-    const headers = `{ "Authorization": "Bearer <<Token>>" } => headers to send in the request`;
+    const headers = `{ "Authorization": "Bearer 1|KnecSe3PGbFibSe9Dq4NqxKQ3CpI3xc0JhogNbEI0c1f08e3" } => headers to send in the request`;
 
     const middlewares = `["auth:sanctum"] => middleware to verify the user's authentication`;
 
@@ -69,7 +69,7 @@
     "data": {
         "id": 1,
         "name": "Carlos Mateo Martinez",
-        "email": "carlosmateo484@gmail.com",
+        "email": "carlosmateo@example.com",
         "emailVerifiedAt": "2025-02-17T20:12:14.000000Z",
         "updatedAt": "2025-02-17T20:14:39.000000Z",
         "createdAt": "2025-02-17T20:11:28.000000Z"
@@ -78,7 +78,7 @@
  
     const { fetchUser } = useAuthStore();
     
-    const responseData = ref({ "request": "no sent" });
+    const responseData = ref({ "request": "not sent" });
 
     const responseString = computed(() => JSON.stringify(responseData.value, null, 2));
 
